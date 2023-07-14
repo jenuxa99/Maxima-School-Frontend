@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+.menu li a,
+.menu li p {
+    display: block;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.menu li a:hover,
+.menu li p:hover,
+.menu li a:focus,
+.menu li p:focus,
+.menu li a:active,
+.menu li p:active {
+    background-color: #eaeaea;
+}
+
+.menu {
+    padding: 20px 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.modal-menu-wrapper {
+    position: fixed;
+    top: 40px;
+    left: -100%;
+    height: fit-content;
+    z-index: 9999;
+    width: 800px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #333333;
+    margin-top: 20px;
+    transition: left 1s;
+    animation-timing-function: cubic-bezier(ease);
+}
+
+.slide-in {
+    left: calc(50% - 400px);
+}
+
+.modal-menu label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.modal-menu input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.modal-menu textarea {
+    resize: none;
+}
+
+.modal-menu input[type="submit"] {
+    background-color: #555555;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-menu input[type="submit"]:hover,
+.modal-menu input[type="submit"]:focus,
+.modal-menu input[type="submit"]:active {
+    background-color: #333333;
+}
+
+#modal-menu-close {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    float: right;
+}
+
+.news-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    width: calc(33.33%);
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.news-item img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.news-item h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.news-item p {
+    margin: 0;
+    color: #555555;
+}
+
+.news-item .read-more {
+    display: inline-block;
+    background-color: #555555;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.news-item .read-more:hover,
+.news-item .read-more:focus,
+.news-item .read-more:active {
+    background-color: #333333;
+}
+
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.feedback {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.feedback h2,
+.feedback p {
+    font-size: 24px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.feedback p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.feedback-form textarea {
+    resize: none;
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #555555;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.feedback-form input[type="submit"]:hover,
+.feedback-form input[type="submit"]:focus,
+.feedback-form input[type="submit"]:active {
+    background-color: #333333;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.own-btn {
+    height: 50px;
+    position: absolute;
+    z-index: 999;
+    top: calc(50% - 25px);
+    background-color: transparent;
+    cursor: pointer;
+    border: 0px transparent;
+    transition: all .3s;
+    font-size: 50px;
+    font-weight: 700;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, .5));
+}
+
+.own-btn:hover {
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+}
+
+.own-btn:active {
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0));
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
